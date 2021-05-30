@@ -22,6 +22,9 @@ input {
 .content {
   margin-left: 160px;
   padding: 0 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: auto;
 }
 
 .active {
