@@ -15,10 +15,10 @@ const ElementView = ({ element }) => {
         {`${element.firstName} ${element.lastName}`}
       </div>
       <div className="radio-bar">
-        <label htmlFor="active-radio">
+        <label htmlFor={`active-radio-${element.id}`}>
           Active
           <input
-            id="active-radio"
+            id={`active-radio-${element.id}`}
             type="radio"
             name={element.lastName}
             checked={element.active}
@@ -27,10 +27,10 @@ const ElementView = ({ element }) => {
             }}
           />
         </label>
-        <label htmlFor="not-active-radio">
+        <label htmlFor={`not-active-radio-${element.id}`} >
           Not Active
           <input
-            id="not-active-radio"
+            id={`not-active-radio-${element.id}`}
             type="radio"
             name={element.lastName}
             checked={!element.active}

@@ -49,7 +49,7 @@ const App = () => {
   }
 
   return (
-    <React.Fragment>
+    <div className="content">
       {ALPHABET.map((letter) => (
         <DataView
           letter={letter}
@@ -59,7 +59,7 @@ const App = () => {
         />
       ))}
       <Sidebar />
-    </React.Fragment>
+    </div>
   );
 };
 
